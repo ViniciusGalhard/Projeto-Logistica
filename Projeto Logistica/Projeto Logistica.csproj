@@ -46,16 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroNovaRotaContratante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroNovaRotaContratante.Designer.cs">
+      <DependentUpon>CadastroNovaRotaContratante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroNovaRotaTransportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroNovaRotaTransportador.Designer.cs">
+      <DependentUpon>CadastroNovaRotaTransportador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaginaBuscaContratanteNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaBuscaContratanteNovo.Designer.cs">
+      <DependentUpon>PaginaBuscaContratanteNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaBuscaTransportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaBuscaTransportador.Designer.cs">
+      <DependentUpon>PaginaBuscaTransportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaCadastroContratanteNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaCadastroContratanteNovo.Designer.cs">
+      <DependentUpon>PaginaCadastroContratanteNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaCadastroTransportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaCadastroTransportador.Designer.cs">
+      <DependentUpon>PaginaCadastroTransportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaCadastroVeiculoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaCadastroVeiculoNovo.Designer.cs">
+      <DependentUpon>PaginaCadastroVeiculoNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaConfirmacaoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaConfirmacaoNovo.Designer.cs">
+      <DependentUpon>PaginaConfirmacaoNovo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroNovaRotaContratante.resx">
+      <DependentUpon>CadastroNovaRotaContratante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroNovaRotaTransportador.resx">
+      <DependentUpon>CadastroNovaRotaTransportador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaBuscaContratanteNovo.resx">
+      <DependentUpon>PaginaBuscaContratanteNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaBuscaTransportador.resx">
+      <DependentUpon>PaginaBuscaTransportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaCadastroContratanteNovo.resx">
+      <DependentUpon>PaginaCadastroContratanteNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaCadastroTransportador.resx">
+      <DependentUpon>PaginaCadastroTransportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaCadastroVeiculoNovo.resx">
+      <DependentUpon>PaginaCadastroVeiculoNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaConfirmacaoNovo.resx">
+      <DependentUpon>PaginaConfirmacaoNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +157,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo 4.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

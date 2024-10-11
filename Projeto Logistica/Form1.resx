@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblMensagem.Text" xml:space="preserve">
+    <value>Bem-vindo à Pathway Systems! 
+Estamos empolgados em ter você a bordo
+e prontos para transformar a sua gestão logística
+com nossa tecnologia de ponta. Prepare-se para
+otimizar processos e alcançar novos patamares
+de eficiência com a nossa solução inovadora.
+</value>
+  </data>
 </root>

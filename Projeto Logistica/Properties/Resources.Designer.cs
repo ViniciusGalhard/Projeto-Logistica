@@ -63,6 +63,46 @@ namespace Projeto_Logistica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagem {
+            get {
+                object obj = ResourceManager.GetObject("imagem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagem1 {
+            get {
+                object obj = ResourceManager.GetObject("imagem1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagem11 {
+            get {
+                object obj = ResourceManager.GetObject("imagem11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagem2 {
+            get {
+                object obj = ResourceManager.GetObject("imagem2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_4 {
             get {
                 object obj = ResourceManager.GetObject("logo 4", resourceCulture);
@@ -76,6 +116,36 @@ namespace Projeto_Logistica.Properties {
         internal static System.Drawing.Bitmap logo_4_1 {
             get {
                 object obj = ResourceManager.GetObject("logo 4.1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_título {
+            get {
+                object obj = ResourceManager.GetObject("Sem título", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap video_1 {
+            get {
+                object obj = ResourceManager.GetObject("video-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap video_11 {
+            get {
+                object obj = ResourceManager.GetObject("video-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

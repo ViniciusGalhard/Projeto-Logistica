@@ -16,7 +16,7 @@ namespace Projeto_Logistica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaginaInicial());
+            Application.Run(new PaginaBuscaTransportador());
         }
     }
 }
