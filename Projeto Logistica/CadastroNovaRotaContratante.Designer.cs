@@ -33,8 +33,6 @@
             this.cbxCadastroNovaRotaContratanteTipocarga = new System.Windows.Forms.ComboBox();
             this.tbxCadastroNovaRotaContratanteDatachegada = new System.Windows.Forms.TextBox();
             this.tbxCadastroNovaRotaContratanteDatasaida = new System.Windows.Forms.TextBox();
-            this.tbxCadastroNovaRotaContratanteDestino = new System.Windows.Forms.TextBox();
-            this.tbxCadastroNovaRotaContratanteLocalpartida = new System.Windows.Forms.TextBox();
             this.lblCadastroNovaRotaContratanteCargamaxima = new System.Windows.Forms.Label();
             this.lblCadastroNovaRotaContratanteTipocarga = new System.Windows.Forms.Label();
             this.lblCadastroNovaRotaContratanteDatachegada = new System.Windows.Forms.Label();
@@ -44,6 +42,8 @@
             this.btnCadastroNovaRotaContratanteCadastrar = new System.Windows.Forms.Button();
             this.lblCadastroNovaRotaContratanteTitulo = new System.Windows.Forms.Label();
             this.pbxCadastroNovaRotaContratanteLogo = new System.Windows.Forms.PictureBox();
+            this.tbxCadastroNovaRotaContratanteDestino = new System.Windows.Forms.TextBox();
+            this.tbxCadastroNovaRotaContratanteLocalpartida = new System.Windows.Forms.TextBox();
             this.pnlCadastroNovaRotaContratante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCadastroNovaRotaContratanteLogo)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             // tbxCadastroNovaRotaContratanteCargamaxima
             // 
-            this.tbxCadastroNovaRotaContratanteCargamaxima.Location = new System.Drawing.Point(303, 323);
+            this.tbxCadastroNovaRotaContratanteCargamaxima.Location = new System.Drawing.Point(326, 323);
             this.tbxCadastroNovaRotaContratanteCargamaxima.Name = "tbxCadastroNovaRotaContratanteCargamaxima";
             this.tbxCadastroNovaRotaContratanteCargamaxima.Size = new System.Drawing.Size(118, 20);
             this.tbxCadastroNovaRotaContratanteCargamaxima.TabIndex = 37;
@@ -82,39 +82,42 @@
             // cbxCadastroNovaRotaContratanteTipocarga
             // 
             this.cbxCadastroNovaRotaContratanteTipocarga.FormattingEnabled = true;
-            this.cbxCadastroNovaRotaContratanteTipocarga.Location = new System.Drawing.Point(303, 273);
+            this.cbxCadastroNovaRotaContratanteTipocarga.Items.AddRange(new object[] {
+            "Carroceria Frigorífica",
+            "Carroceria Graneleira",
+            "Carroceria Sider",
+            "Carroceria Plataforma",
+            "Carroceria Balançada",
+            "Carroceria Tanque",
+            "Carroceria Carga Secas",
+            "Carroceria Open Deck",
+            "Carroceria de Transporte de Animais",
+            "Caçamba Basculante",
+            "Caçamba Graneleira",
+            "Caçamba Hidráulica",
+            "Caçamba Frontal",
+            "Caçamba de Coleta de Resíduos",
+            "Caçamba de Transporte de Entulho",
+            "Caçamba Rebaixada",
+            "Caçamba Alongada"});
+            this.cbxCadastroNovaRotaContratanteTipocarga.Location = new System.Drawing.Point(326, 273);
             this.cbxCadastroNovaRotaContratanteTipocarga.Name = "cbxCadastroNovaRotaContratanteTipocarga";
-            this.cbxCadastroNovaRotaContratanteTipocarga.Size = new System.Drawing.Size(118, 21);
+            this.cbxCadastroNovaRotaContratanteTipocarga.Size = new System.Drawing.Size(260, 21);
             this.cbxCadastroNovaRotaContratanteTipocarga.TabIndex = 36;
             // 
             // tbxCadastroNovaRotaContratanteDatachegada
             // 
-            this.tbxCadastroNovaRotaContratanteDatachegada.Location = new System.Drawing.Point(303, 218);
+            this.tbxCadastroNovaRotaContratanteDatachegada.Location = new System.Drawing.Point(326, 217);
             this.tbxCadastroNovaRotaContratanteDatachegada.Name = "tbxCadastroNovaRotaContratanteDatachegada";
             this.tbxCadastroNovaRotaContratanteDatachegada.Size = new System.Drawing.Size(118, 20);
             this.tbxCadastroNovaRotaContratanteDatachegada.TabIndex = 35;
             // 
             // tbxCadastroNovaRotaContratanteDatasaida
             // 
-            this.tbxCadastroNovaRotaContratanteDatasaida.Location = new System.Drawing.Point(303, 170);
+            this.tbxCadastroNovaRotaContratanteDatasaida.Location = new System.Drawing.Point(326, 170);
             this.tbxCadastroNovaRotaContratanteDatasaida.Name = "tbxCadastroNovaRotaContratanteDatasaida";
             this.tbxCadastroNovaRotaContratanteDatasaida.Size = new System.Drawing.Size(118, 20);
             this.tbxCadastroNovaRotaContratanteDatasaida.TabIndex = 34;
-            // 
-            // tbxCadastroNovaRotaContratanteDestino
-            // 
-            this.tbxCadastroNovaRotaContratanteDestino.Location = new System.Drawing.Point(303, 121);
-            this.tbxCadastroNovaRotaContratanteDestino.Name = "tbxCadastroNovaRotaContratanteDestino";
-            this.tbxCadastroNovaRotaContratanteDestino.Size = new System.Drawing.Size(118, 20);
-            this.tbxCadastroNovaRotaContratanteDestino.TabIndex = 33;
-            // 
-            // tbxCadastroNovaRotaContratanteLocalpartida
-            // 
-            this.tbxCadastroNovaRotaContratanteLocalpartida.Location = new System.Drawing.Point(303, 77);
-            this.tbxCadastroNovaRotaContratanteLocalpartida.Name = "tbxCadastroNovaRotaContratanteLocalpartida";
-            this.tbxCadastroNovaRotaContratanteLocalpartida.Size = new System.Drawing.Size(118, 20);
-            this.tbxCadastroNovaRotaContratanteLocalpartida.TabIndex = 32;
-            this.tbxCadastroNovaRotaContratanteLocalpartida.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorLocalpartida_TextChanged);
             // 
             // lblCadastroNovaRotaContratanteCargamaxima
             // 
@@ -123,9 +126,10 @@
             this.lblCadastroNovaRotaContratanteCargamaxima.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblCadastroNovaRotaContratanteCargamaxima.Location = new System.Drawing.Point(168, 323);
             this.lblCadastroNovaRotaContratanteCargamaxima.Name = "lblCadastroNovaRotaContratanteCargamaxima";
-            this.lblCadastroNovaRotaContratanteCargamaxima.Size = new System.Drawing.Size(106, 16);
+            this.lblCadastroNovaRotaContratanteCargamaxima.Size = new System.Drawing.Size(152, 16);
             this.lblCadastroNovaRotaContratanteCargamaxima.TabIndex = 31;
-            this.lblCadastroNovaRotaContratanteCargamaxima.Text = "Carga Máxima";
+            this.lblCadastroNovaRotaContratanteCargamaxima.Text = "Carga Máxima em kg";
+            this.lblCadastroNovaRotaContratanteCargamaxima.Click += new System.EventHandler(this.lblCadastroNovaRotaContratanteCargamaxima_Click);
             // 
             // lblCadastroNovaRotaContratanteTipocarga
             // 
@@ -215,6 +219,21 @@
             this.pbxCadastroNovaRotaContratanteLogo.TabIndex = 0;
             this.pbxCadastroNovaRotaContratanteLogo.TabStop = false;
             // 
+            // tbxCadastroNovaRotaContratanteDestino
+            // 
+            this.tbxCadastroNovaRotaContratanteDestino.Location = new System.Drawing.Point(327, 121);
+            this.tbxCadastroNovaRotaContratanteDestino.Name = "tbxCadastroNovaRotaContratanteDestino";
+            this.tbxCadastroNovaRotaContratanteDestino.Size = new System.Drawing.Size(260, 20);
+            this.tbxCadastroNovaRotaContratanteDestino.TabIndex = 33;
+            // 
+            // tbxCadastroNovaRotaContratanteLocalpartida
+            // 
+            this.tbxCadastroNovaRotaContratanteLocalpartida.Location = new System.Drawing.Point(326, 77);
+            this.tbxCadastroNovaRotaContratanteLocalpartida.Name = "tbxCadastroNovaRotaContratanteLocalpartida";
+            this.tbxCadastroNovaRotaContratanteLocalpartida.Size = new System.Drawing.Size(260, 20);
+            this.tbxCadastroNovaRotaContratanteLocalpartida.TabIndex = 32;
+            this.tbxCadastroNovaRotaContratanteLocalpartida.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorLocalpartida_TextChanged);
+            // 
             // CadastroNovaRotaContratante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,13 +259,13 @@
         private System.Windows.Forms.ComboBox cbxCadastroNovaRotaContratanteTipocarga;
         private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteDatachegada;
         private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteDatasaida;
-        private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteDestino;
-        private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteLocalpartida;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteCargamaxima;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteTipocarga;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteDatachegada;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteDatasaida;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteDestino;
         private System.Windows.Forms.Label lblCadastroNovaRotaContratanteLocalpartida;
+        private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteDestino;
+        private System.Windows.Forms.TextBox tbxCadastroNovaRotaContratanteLocalpartida;
     }
 }

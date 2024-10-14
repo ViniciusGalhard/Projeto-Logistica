@@ -123,7 +123,7 @@ namespace Projeto_Logistica
                 try//Tentar
                 {
                     cn.Open();
-                    cm.CommandText = "select * from Transportador where loginT= ('" + tbxPaginaInicialLogin.Text + "') and senhaT= ('" + tbxPaginaInicialSenha.Text + "')";
+                    cm.CommandText = "select * from Transportador where login= ('" + tbxPaginaInicialLogin.Text + "') and senha= ('" + tbxPaginaInicialSenha.Text + "')";
                     cm.Connection = cn;
                     dt = cm.ExecuteReader();
 

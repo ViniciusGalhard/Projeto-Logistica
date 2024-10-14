@@ -18,7 +18,7 @@ namespace Projeto_Logistica
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(@"Persist Security Info=True;User ID=senac;Password=senac;Initial Catalog=ProjetoLogisticaNovo;Server=TAU0588410W10-1;Encrypt=false;");
+        SqlConnection cn = new SqlConnection(@"Persist Security Info=True;User ID=senac;Password=senac;Initial Catalog=ProjetoIntegrador;Server=TAU0588410W10-1;Encrypt=false;");
 
         SqlCommand cm = new SqlCommand();
 
@@ -92,10 +92,11 @@ namespace Projeto_Logistica
                     string Destino = tbxCadastroNovaRotaContratanteDestino.Text;
                     string DataSaida = tbxCadastroNovaRotaContratanteDatasaida.Text;
                     string DataChegada = tbxCadastroNovaRotaContratanteDatachegada.Text;
-                    string TipodeCarga = cbxCadastroNovaRotaContratanteTipocarga.Text;
+                    string TipodeCaçamba = cbxCadastroNovaRotaContratanteTipocarga.Text;
                     string CargaMaxima = tbxCadastroNovaRotaContratanteCargamaxima.Text;
+                   
 
-                    string strSql = "insert into Rota_Contratante(Local_Partida, Destino, Data_Saida, Data_chegada, Tipo_Cacamba, Carga) values (@Local_Partida, @Destino, @Data_Saida, @Data_Chegada, @Tipo_Cacamba, @Carga)";
+                    string strSql = "insert into Rota_Contratante(Local_Partida, Destido, Data_Saida, Data_chegada, TipoCaçamba, Carga) values (@Local_Partida, @Destino, @Data_Saida, @Data_Chegada, @Tipo_Cacamba, @Carga)";
 
                     cm.CommandText = strSql;
                     cm.Connection = cn;
@@ -106,8 +107,11 @@ namespace Projeto_Logistica
                     cm.Parameters.Add("@Destino", SqlDbType.VarChar).Value = Destino;
                     cm.Parameters.Add("@Data_Saida", SqlDbType.VarChar).Value = DataSaida;
                     cm.Parameters.Add("@Data_Chegada", SqlDbType.VarChar).Value = DataChegada;
-                    cm.Parameters.Add("@Tipo_Cacamba", SqlDbType.VarChar).Value = TipodeCarga;
+                    cm.Parameters.Add("@Tipo_Cacamba", SqlDbType.VarChar).Value = TipodeCaçamba;
                     cm.Parameters.Add("@Carga", SqlDbType.VarChar).Value = CargaMaxima;
+                    //cm.Parameters.Add("@nometra", SqlDbType.VarChar).Value = CargaMaxima;
+
+                    
                     //cm.Parameters.AddwithValue("@login",tbx_login_employe.Text);
 
                     cn.Open();
@@ -129,14 +133,19 @@ namespace Projeto_Logistica
                     //PaginaBuscaContratanteNovo buscaVcon = new PaginaBuscaContratanteNovo();
                     //buscaVcon.Show();
                     //this.Hide();
-                    PaginaBuscaTransportador buscaVtra = new PaginaBuscaTransportador();
-                    buscaVtra.Show();
+                    PaginaBuscaContratanteNovo buscaContra = new PaginaBuscaContratanteNovo();
+                    buscaContra.Show();
                     this.Hide();
                 }
             }
         }
 
         private void pnlCadastroNovaRotaContratante_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblCadastroNovaRotaContratanteCargamaxima_Click(object sender, EventArgs e)
         {
 
         }

@@ -50,11 +50,11 @@
             this.lblConfirmacaoVeiculoMarca = new System.Windows.Forms.Label();
             this.lblConfirmacaoVeiculoTipocacamba = new System.Windows.Forms.Label();
             this.lblConfirmacaoVeiculoCargamaxima = new System.Windows.Forms.Label();
-            this.lblConfirmacao = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblConfirmacaoLOCALPARTIDA = new System.Windows.Forms.Label();
+            this.lblConfirmacaoDESTINOO = new System.Windows.Forms.Label();
+            this.lblConfirmacaoDATASAIDAA = new System.Windows.Forms.Label();
+            this.lblConfirmacaoDATACHEGADAA = new System.Windows.Forms.Label();
+            this.lblConfirmacaoTIPODECARGAA = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.lblConfirmacaoCARGAA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPaginaConfirmacaoConfirma
@@ -300,55 +301,55 @@
             this.lblConfirmacaoVeiculoCargamaxima.TabIndex = 68;
             this.lblConfirmacaoVeiculoCargamaxima.Text = "Carga Máxima em kg";
             // 
-            // lblConfirmacao
+            // lblConfirmacaoLOCALPARTIDA
             // 
-            this.lblConfirmacao.AutoSize = true;
-            this.lblConfirmacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmacao.Location = new System.Drawing.Point(12, 85);
-            this.lblConfirmacao.Name = "lblConfirmacao";
-            this.lblConfirmacao.Size = new System.Drawing.Size(41, 15);
-            this.lblConfirmacao.TabIndex = 69;
-            this.lblConfirmacao.Text = "label5";
+            this.lblConfirmacaoLOCALPARTIDA.AutoSize = true;
+            this.lblConfirmacaoLOCALPARTIDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoLOCALPARTIDA.Location = new System.Drawing.Point(12, 85);
+            this.lblConfirmacaoLOCALPARTIDA.Name = "lblConfirmacaoLOCALPARTIDA";
+            this.lblConfirmacaoLOCALPARTIDA.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoLOCALPARTIDA.TabIndex = 69;
+            this.lblConfirmacaoLOCALPARTIDA.Text = "label5";
             // 
-            // label1
+            // lblConfirmacaoDESTINOO
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 70;
-            this.label1.Text = "label5";
+            this.lblConfirmacaoDESTINOO.AutoSize = true;
+            this.lblConfirmacaoDESTINOO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoDESTINOO.Location = new System.Drawing.Point(13, 137);
+            this.lblConfirmacaoDESTINOO.Name = "lblConfirmacaoDESTINOO";
+            this.lblConfirmacaoDESTINOO.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoDESTINOO.TabIndex = 70;
+            this.lblConfirmacaoDESTINOO.Text = "label5";
             // 
-            // label2
+            // lblConfirmacaoDATASAIDAA
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 187);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 15);
-            this.label2.TabIndex = 71;
-            this.label2.Text = "label5";
+            this.lblConfirmacaoDATASAIDAA.AutoSize = true;
+            this.lblConfirmacaoDATASAIDAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoDATASAIDAA.Location = new System.Drawing.Point(13, 187);
+            this.lblConfirmacaoDATASAIDAA.Name = "lblConfirmacaoDATASAIDAA";
+            this.lblConfirmacaoDATASAIDAA.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoDATASAIDAA.TabIndex = 71;
+            this.lblConfirmacaoDATASAIDAA.Text = "label5";
             // 
-            // label3
+            // lblConfirmacaoDATACHEGADAA
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 15);
-            this.label3.TabIndex = 72;
-            this.label3.Text = "label5";
+            this.lblConfirmacaoDATACHEGADAA.AutoSize = true;
+            this.lblConfirmacaoDATACHEGADAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoDATACHEGADAA.Location = new System.Drawing.Point(13, 245);
+            this.lblConfirmacaoDATACHEGADAA.Name = "lblConfirmacaoDATACHEGADAA";
+            this.lblConfirmacaoDATACHEGADAA.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoDATACHEGADAA.TabIndex = 72;
+            this.lblConfirmacaoDATACHEGADAA.Text = "label5";
             // 
-            // label4
+            // lblConfirmacaoTIPODECARGAA
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 301);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
-            this.label4.TabIndex = 73;
-            this.label4.Text = "label5";
+            this.lblConfirmacaoTIPODECARGAA.AutoSize = true;
+            this.lblConfirmacaoTIPODECARGAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoTIPODECARGAA.Location = new System.Drawing.Point(13, 301);
+            this.lblConfirmacaoTIPODECARGAA.Name = "lblConfirmacaoTIPODECARGAA";
+            this.lblConfirmacaoTIPODECARGAA.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoTIPODECARGAA.TabIndex = 73;
+            this.lblConfirmacaoTIPODECARGAA.Text = "label5";
             // 
             // label5
             // 
@@ -460,12 +461,22 @@
             this.label15.TabIndex = 84;
             this.label15.Text = "label5";
             // 
+            // lblConfirmacaoCARGAA
+            // 
+            this.lblConfirmacaoCARGAA.AutoSize = true;
+            this.lblConfirmacaoCARGAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmacaoCARGAA.Location = new System.Drawing.Point(13, 353);
+            this.lblConfirmacaoCARGAA.Name = "lblConfirmacaoCARGAA";
+            this.lblConfirmacaoCARGAA.Size = new System.Drawing.Size(41, 15);
+            this.lblConfirmacaoCARGAA.TabIndex = 85;
+            this.lblConfirmacaoCARGAA.Text = "label5";
+            // 
             // PaginaConfirmacaoNovo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Projeto_Logistica.Properties.Resources.Sem_título;
             this.ClientSize = new System.Drawing.Size(970, 415);
+            this.Controls.Add(this.lblConfirmacaoCARGAA);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -477,11 +488,11 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblConfirmacao);
+            this.Controls.Add(this.lblConfirmacaoTIPODECARGAA);
+            this.Controls.Add(this.lblConfirmacaoDATACHEGADAA);
+            this.Controls.Add(this.lblConfirmacaoDATASAIDAA);
+            this.Controls.Add(this.lblConfirmacaoDESTINOO);
+            this.Controls.Add(this.lblConfirmacaoLOCALPARTIDA);
             this.Controls.Add(this.lblConfirmacaoVeiculoCargamaxima);
             this.Controls.Add(this.lblConfirmacaoVeiculoTipocacamba);
             this.Controls.Add(this.lblConfirmacaoVeiculoMarca);
@@ -535,11 +546,11 @@
         private System.Windows.Forms.Label lblConfirmacaoVeiculoMarca;
         private System.Windows.Forms.Label lblConfirmacaoVeiculoTipocacamba;
         private System.Windows.Forms.Label lblConfirmacaoVeiculoCargamaxima;
-        private System.Windows.Forms.Label lblConfirmacao;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblConfirmacaoLOCALPARTIDA;
+        private System.Windows.Forms.Label lblConfirmacaoDESTINOO;
+        private System.Windows.Forms.Label lblConfirmacaoDATASAIDAA;
+        private System.Windows.Forms.Label lblConfirmacaoDATACHEGADAA;
+        private System.Windows.Forms.Label lblConfirmacaoTIPODECARGAA;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -551,5 +562,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblConfirmacaoCARGAA;
     }
 }

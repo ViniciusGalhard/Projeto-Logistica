@@ -18,8 +18,7 @@ namespace Projeto_Logistica
         {
             InitializeComponent();
         }
-
-        SqlConnection cn = new SqlConnection(@"Persist Security Info=True;User ID=senac;Password=senac;Initial Catalog=ProjetoLogisticaNovo;Server=TAU0588410W10-1;Encrypt=false;");
+        SqlConnection cn = new SqlConnection(@"Persist Security Info=True;User ID=senac;Password=senac;Initial Catalog=ProjetoIntegrador;Server=TAU0588410W10-1;Encrypt=false;");
 
         SqlCommand cm = new SqlCommand();
 
@@ -87,7 +86,10 @@ namespace Projeto_Logistica
                         string TipodeCarga = cbxCadastroNovaRotaTransportadorTipocarga.Text;
                         string CargaMaxima = tbxCadastroNovaRotaTransportadorCargamaxima.Text;
 
-                        string strSql = "insert into Rota_Transportador(Local_Partida, Destino, Data_Saida, Data_chegada, Tipo_Cacamba, Carga) values (@Local_Partida, @Destino, @Data_Saida, @Data_Chegada, @Tipo_Cacamba, @Carga)";
+                        
+                        string NC = "aaaaa"; // °_°
+
+                        string strSql = "insert into Rota_Trasportador(Local_Partida,Destido,Data_Saida,Data_chegada,TipoCaçamba,Carga,Nome_Contratante) values (@Local_Partida,@Destino,@Data_Saida,@Data_Chegada,@Tipo_Cacamba,@Carga,@NC)";
 
                         cm.CommandText = strSql;
                         cm.Connection = cn;
@@ -100,6 +102,9 @@ namespace Projeto_Logistica
                         cm.Parameters.Add("@Data_Chegada", SqlDbType.VarChar).Value = DataChegada;
                         cm.Parameters.Add("@Tipo_Cacamba", SqlDbType.VarChar).Value = TipodeCarga;
                         cm.Parameters.Add("@Carga", SqlDbType.VarChar).Value = CargaMaxima;
+
+                        cm.Parameters.Add("@NC", SqlDbType.VarChar).Value = NC;// °_°
+
                         //cm.Parameters.AddwithValue("@login",tbx_login_employe.Text);
 
                         cn.Open();
@@ -121,12 +126,17 @@ namespace Projeto_Logistica
                         //PaginaBuscaContratanteNovo buscaVcon = new PaginaBuscaContratanteNovo();
                         //buscaVcon.Show();
                         //this.Hide();
-                        PaginaBuscaTransportador buscaVtra = new PaginaBuscaTransportador();
-                        buscaVtra.Show();
+                        PaginaBuscaContratanteNovo buscaContra = new PaginaBuscaContratanteNovo();
+                        buscaContra.Show();
                         this.Hide();
                     }
                 }
             }
+        }
+
+        private void CadastroNovaRotaTransportador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

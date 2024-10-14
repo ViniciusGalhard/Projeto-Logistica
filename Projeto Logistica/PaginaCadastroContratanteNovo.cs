@@ -87,7 +87,7 @@ namespace Projeto_Logistica
                     string senha = tbxCasdastroContratanteSenha.Text;
 
 
-                    string strSql = "insert into Contratante (nome, cpf_cnpj, email, telefone, login, senha) values (@nome, @cpf_cnpj ,@email, @telefone, @login ,@senha)";
+                    string strSql = "insert into Contratante (nome, cpf_cnpj,email,telefone,login,senha) values (@nome,@cpf_cnpj,@email,@telefone,@login,@senha)";
 
                     cm.CommandText = strSql;
                     cm.Connection = cn;

@@ -76,6 +76,24 @@
             // cbxBuscaContratanteTipocarga
             // 
             this.cbxBuscaContratanteTipocarga.FormattingEnabled = true;
+            this.cbxBuscaContratanteTipocarga.Items.AddRange(new object[] {
+            "Carroceria Frigorífica",
+            "Carroceria Graneleira",
+            "Carroceria Sider",
+            "Carroceria Plataforma",
+            "Carroceria Balançada",
+            "Carroceria Tanque",
+            "Carroceria Carga Secas",
+            "Carroceria Open Deck",
+            "Carroceria de Transporte de Animais",
+            "Caçamba Basculante",
+            "Caçamba Graneleira",
+            "Caçamba Hidráulica",
+            "Caçamba Frontal",
+            "Caçamba de Coleta de Resíduos",
+            "Caçamba de Transporte de Entulho",
+            "Caçamba Rebaixada",
+            "Caçamba Alongada"});
             this.cbxBuscaContratanteTipocarga.Location = new System.Drawing.Point(587, 39);
             this.cbxBuscaContratanteTipocarga.Name = "cbxBuscaContratanteTipocarga";
             this.cbxBuscaContratanteTipocarga.Size = new System.Drawing.Size(121, 21);

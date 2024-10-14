@@ -87,7 +87,7 @@
             this.lblCadastroNovaRotaTransportadorIDcaminhao.AutoSize = true;
             this.lblCadastroNovaRotaTransportadorIDcaminhao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroNovaRotaTransportadorIDcaminhao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCadastroNovaRotaTransportadorIDcaminhao.Location = new System.Drawing.Point(495, 81);
+            this.lblCadastroNovaRotaTransportadorIDcaminhao.Location = new System.Drawing.Point(518, 81);
             this.lblCadastroNovaRotaTransportadorIDcaminhao.Name = "lblCadastroNovaRotaTransportadorIDcaminhao";
             this.lblCadastroNovaRotaTransportadorIDcaminhao.Size = new System.Drawing.Size(95, 16);
             this.lblCadastroNovaRotaTransportadorIDcaminhao.TabIndex = 38;
@@ -103,37 +103,55 @@
             // cbxCadastroNovaRotaTransportadorTipocarga
             // 
             this.cbxCadastroNovaRotaTransportadorTipocarga.FormattingEnabled = true;
+            this.cbxCadastroNovaRotaTransportadorTipocarga.Items.AddRange(new object[] {
+            "Carroceria Frigorífica",
+            "Carroceria Graneleira",
+            "Carroceria Sider",
+            "Carroceria Plataforma",
+            "Carroceria Balançada",
+            "Carroceria Tanque",
+            "Carroceria Carga Secas",
+            "Carroceria Open Deck",
+            "Carroceria de Transporte de Animais",
+            "Caçamba Basculante",
+            "Caçamba Graneleira",
+            "Caçamba Hidráulica",
+            "Caçamba Frontal",
+            "Caçamba de Coleta de Resíduos",
+            "Caçamba de Transporte de Entulho",
+            "Caçamba Rebaixada",
+            "Caçamba Alongada"});
             this.cbxCadastroNovaRotaTransportadorTipocarga.Location = new System.Drawing.Point(303, 273);
             this.cbxCadastroNovaRotaTransportadorTipocarga.Name = "cbxCadastroNovaRotaTransportadorTipocarga";
-            this.cbxCadastroNovaRotaTransportadorTipocarga.Size = new System.Drawing.Size(118, 21);
+            this.cbxCadastroNovaRotaTransportadorTipocarga.Size = new System.Drawing.Size(186, 21);
             this.cbxCadastroNovaRotaTransportadorTipocarga.TabIndex = 36;
             // 
             // tbxCadastroNovaRotaTransportadorDatachegada
             // 
             this.tbxCadastroNovaRotaTransportadorDatachegada.Location = new System.Drawing.Point(303, 218);
             this.tbxCadastroNovaRotaTransportadorDatachegada.Name = "tbxCadastroNovaRotaTransportadorDatachegada";
-            this.tbxCadastroNovaRotaTransportadorDatachegada.Size = new System.Drawing.Size(118, 20);
+            this.tbxCadastroNovaRotaTransportadorDatachegada.Size = new System.Drawing.Size(186, 20);
             this.tbxCadastroNovaRotaTransportadorDatachegada.TabIndex = 35;
             // 
             // tbxCadastroNovaRotaTransportadorDatasaida
             // 
             this.tbxCadastroNovaRotaTransportadorDatasaida.Location = new System.Drawing.Point(303, 170);
             this.tbxCadastroNovaRotaTransportadorDatasaida.Name = "tbxCadastroNovaRotaTransportadorDatasaida";
-            this.tbxCadastroNovaRotaTransportadorDatasaida.Size = new System.Drawing.Size(118, 20);
+            this.tbxCadastroNovaRotaTransportadorDatasaida.Size = new System.Drawing.Size(186, 20);
             this.tbxCadastroNovaRotaTransportadorDatasaida.TabIndex = 34;
             // 
             // tbxCadastroNovaRotaTransportadorDestino
             // 
             this.tbxCadastroNovaRotaTransportadorDestino.Location = new System.Drawing.Point(303, 121);
             this.tbxCadastroNovaRotaTransportadorDestino.Name = "tbxCadastroNovaRotaTransportadorDestino";
-            this.tbxCadastroNovaRotaTransportadorDestino.Size = new System.Drawing.Size(118, 20);
+            this.tbxCadastroNovaRotaTransportadorDestino.Size = new System.Drawing.Size(186, 20);
             this.tbxCadastroNovaRotaTransportadorDestino.TabIndex = 33;
             // 
             // tbxCadastroNovaRotaTransportadorLocalpartida
             // 
             this.tbxCadastroNovaRotaTransportadorLocalpartida.Location = new System.Drawing.Point(303, 77);
             this.tbxCadastroNovaRotaTransportadorLocalpartida.Name = "tbxCadastroNovaRotaTransportadorLocalpartida";
-            this.tbxCadastroNovaRotaTransportadorLocalpartida.Size = new System.Drawing.Size(118, 20);
+            this.tbxCadastroNovaRotaTransportadorLocalpartida.Size = new System.Drawing.Size(186, 20);
             this.tbxCadastroNovaRotaTransportadorLocalpartida.TabIndex = 32;
             // 
             // lblCadastroNovaRotaContratanteCargamaxima
@@ -242,6 +260,7 @@
             this.ClientSize = new System.Drawing.Size(832, 417);
             this.Controls.Add(this.pnlCadastroNovaRotaContratante);
             this.Name = "CadastroNovaRotaTransportador";
+            this.Load += new System.EventHandler(this.CadastroNovaRotaTransportador_Load);
             this.pnlCadastroNovaRotaContratante.ResumeLayout(false);
             this.pnlCadastroNovaRotaContratante.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCadastroNovaRotaContratanteLogo)).EndInit();

@@ -64,6 +64,7 @@
             this.dvgBuscaTransportador.Name = "dvgBuscaTransportador";
             this.dvgBuscaTransportador.Size = new System.Drawing.Size(822, 263);
             this.dvgBuscaTransportador.TabIndex = 26;
+            this.dvgBuscaTransportador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgBuscaTransportador_CellContentClick);
             // 
             // tbxBuscaTransportadorCargamaxima
             // 
@@ -71,14 +72,34 @@
             this.tbxBuscaTransportadorCargamaxima.Name = "tbxBuscaTransportadorCargamaxima";
             this.tbxBuscaTransportadorCargamaxima.Size = new System.Drawing.Size(100, 20);
             this.tbxBuscaTransportadorCargamaxima.TabIndex = 25;
+            this.tbxBuscaTransportadorCargamaxima.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorCargamaxima_TextChanged);
             // 
             // cbxBuscaTransportadorTipocarga
             // 
             this.cbxBuscaTransportadorTipocarga.FormattingEnabled = true;
+            this.cbxBuscaTransportadorTipocarga.Items.AddRange(new object[] {
+            "Carroceria Frigorífica",
+            "Carroceria Graneleira",
+            "Carroceria Sider",
+            "Carroceria Plataforma",
+            "Carroceria Balançada",
+            "Carroceria Tanque",
+            "Carroceria Carga Secas",
+            "Carroceria Open Deck",
+            "Carroceria de Transporte de Animais",
+            "Caçamba Basculante",
+            "Caçamba Graneleira",
+            "Caçamba Hidráulica",
+            "Caçamba Frontal",
+            "Caçamba de Coleta de Resíduos",
+            "Caçamba de Transporte de Entulho",
+            "Caçamba Rebaixada",
+            "Caçamba Alongada"});
             this.cbxBuscaTransportadorTipocarga.Location = new System.Drawing.Point(578, 54);
             this.cbxBuscaTransportadorTipocarga.Name = "cbxBuscaTransportadorTipocarga";
             this.cbxBuscaTransportadorTipocarga.Size = new System.Drawing.Size(121, 21);
             this.cbxBuscaTransportadorTipocarga.TabIndex = 24;
+            this.cbxBuscaTransportadorTipocarga.SelectedIndexChanged += new System.EventHandler(this.cbxBuscaTransportadorTipocarga_SelectedIndexChanged);
             // 
             // tbxBuscaTransportadorDatachegada
             // 
@@ -86,6 +107,7 @@
             this.tbxBuscaTransportadorDatachegada.Name = "tbxBuscaTransportadorDatachegada";
             this.tbxBuscaTransportadorDatachegada.Size = new System.Drawing.Size(126, 20);
             this.tbxBuscaTransportadorDatachegada.TabIndex = 23;
+            this.tbxBuscaTransportadorDatachegada.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorDatachegada_TextChanged);
             // 
             // tbxBuscaTransportadorDatasaida
             // 
@@ -93,6 +115,7 @@
             this.tbxBuscaTransportadorDatasaida.Name = "tbxBuscaTransportadorDatasaida";
             this.tbxBuscaTransportadorDatasaida.Size = new System.Drawing.Size(100, 20);
             this.tbxBuscaTransportadorDatasaida.TabIndex = 22;
+            this.tbxBuscaTransportadorDatasaida.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorDatasaida_TextChanged);
             // 
             // tbxBuscaTransportadorDestino
             // 
@@ -100,6 +123,7 @@
             this.tbxBuscaTransportadorDestino.Name = "tbxBuscaTransportadorDestino";
             this.tbxBuscaTransportadorDestino.Size = new System.Drawing.Size(97, 20);
             this.tbxBuscaTransportadorDestino.TabIndex = 21;
+            this.tbxBuscaTransportadorDestino.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorDestino_TextChanged);
             // 
             // tbxBuscaTransportadorLocalpartida
             // 
@@ -107,6 +131,7 @@
             this.tbxBuscaTransportadorLocalpartida.Name = "tbxBuscaTransportadorLocalpartida";
             this.tbxBuscaTransportadorLocalpartida.Size = new System.Drawing.Size(118, 20);
             this.tbxBuscaTransportadorLocalpartida.TabIndex = 20;
+            this.tbxBuscaTransportadorLocalpartida.TextChanged += new System.EventHandler(this.tbxBuscaTransportadorLocalpartida_TextChanged);
             // 
             // lblBuscaTransportadorCargamaxima
             // 
